@@ -2,3 +2,4 @@ hello/hello.go
 integers/integers.go
 iteration/iterations.go
 arrays/arrays.go
+structs/structs.go
