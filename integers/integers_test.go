@@ -1,7 +1,9 @@
 package integers
 
-import "testing"
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestAdder(t *testing.T) {
 	t.Run("Add numbers", func(t *testing.T) {
@@ -38,7 +40,6 @@ func TestMultiple3And5(t *testing.T) {
 	}
 }
 
-
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
@@ -57,7 +58,7 @@ func ExampleEvenOdd_2() {
 	// Output: Even
 }
 
-func ExampleMultiple3And5(){
+func ExampleMultiple3And5() {
 	got := Multiple3And5(11)
 	fmt.Println(got)
 	// Output: 33

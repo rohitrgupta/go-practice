@@ -20,7 +20,6 @@ func TestAreaVal(t *testing.T) {
 	}
 }
 
-
 func TestArea(t *testing.T) {
 
 	areaTests := []struct {

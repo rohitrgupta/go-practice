@@ -1,7 +1,9 @@
 package iteration
 
-import "testing"
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestRepeat(t *testing.T) {
 	repeated := Repeat("a", 5)
@@ -10,15 +12,13 @@ func TestRepeat(t *testing.T) {
 	if repeated != expected {
 		t.Errorf("expected %q but got %q", expected, repeated)
 	}
-}	
-
+}
 
 func ExampleRepeat() {
 	got := Repeat("b", 6)
 	fmt.Println(got)
 	// Output: bbbbbb
 }
-
 
 func TestVovelCount(t *testing.T) {
 	got := VovelCount("hello")
@@ -28,7 +28,6 @@ func TestVovelCount(t *testing.T) {
 		t.Errorf("expected %d but got %d", expected, got)
 	}
 }
-
 
 func ExampleVovelCount() {
 	got := VovelCount("rohitrgupta")
@@ -50,7 +49,6 @@ func ExampleIntToString() {
 	fmt.Println(got)
 	// Output: -5678
 }
-
 
 func TestDigitalRoot(t *testing.T) {
 	got := DigitalRoot(16)
