@@ -1,6 +1,7 @@
 package integers
 
 import "testing"
+import "fmt"
 
 func TestAdder(t *testing.T) {
 	t.Run("Add numbers", func(t *testing.T) {
@@ -20,7 +21,7 @@ func TestEvenOdd(t *testing.T) {
 			t.Errorf("expected '%s' but got '%s'", expected, got)
 		}
 	})
-	t.Run("Test EvenOdd", func(t *testing.T) {
+	t.Run("Test Odd", func(t *testing.T) {
 		got := EvenOdd(1)
 		expected := "Odd"
 		if got != expected {
@@ -38,3 +39,26 @@ func TestMultiple3And5(t *testing.T) {
 }
 
 
+func ExampleAdd() {
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
+}
+
+func ExampleEvenOdd_1() {
+	got := EvenOdd(5)
+	fmt.Println(got)
+	// Output: Odd
+}
+
+func ExampleEvenOdd_2() {
+	got := EvenOdd(6)
+	fmt.Println(got)
+	// Output: Even
+}
+
+func ExampleMultiple3And5(){
+	got := Multiple3And5(11)
+	fmt.Println(got)
+	// Output: 33
+}
