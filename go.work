@@ -1,3 +1,13 @@
 go 1.21.5
 
-use ./dictionary
+use (
+	./arrays
+	./dictionary
+	./hello
+	./injection
+	./integers
+	./iteration
+	./mocking
+	./pointers
+	./structs
+)

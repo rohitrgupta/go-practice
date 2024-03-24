@@ -5,3 +5,5 @@ arrays/arrays.go
 structs/structs.go
 pointers/pointers.go
 dictionary/dictionary.go
+injection/injection.go
+mocking/mocking.go
