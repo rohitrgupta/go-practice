@@ -6,9 +6,12 @@ use (
 	./001_hello
 	./injection
 	./002_integers
-	./iteration
 	./mocking
 	./pointers
 	./structs
 	./003_multiple_of_3_and_5
+  ./004_repeat
+  ./005_vovel_count
+  ./006_int_to_string
+  ./007_digital_root
 )
