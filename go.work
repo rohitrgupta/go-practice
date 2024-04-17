@@ -1,7 +1,6 @@
 go 1.21.5
 
 use (
-	./arrays
 	./dictionary
 	./001_hello
 	./injection
@@ -14,4 +13,6 @@ use (
   ./005_vovel_count
   ./006_int_to_string
   ./007_digital_root
+  ./008_array_sum
+  ./009_array_diff
 )

@@ -1,7 +1,5 @@
 001_hello/hello.go
 002_integers/integers.go
-iteration/iterations.go
-arrays/arrays.go
 structs/structs.go
 pointers/pointers.go
 dictionary/dictionary.go
@@ -12,3 +10,5 @@ mocking/mocking.go
 005_vovel_count/vovel_count.go
 006_int_to_string/int_to_string.go
 007_digital_root/digital_root.go
+008_array_sum/arrays.go
+009_array_diff/arrays.go
