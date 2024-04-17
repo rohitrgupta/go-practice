@@ -1,4 +1,4 @@
-package integers
+package main
 
 import (
 	"fmt"
@@ -32,14 +32,6 @@ func TestEvenOdd(t *testing.T) {
 	})
 }
 
-func TestMultiple3And5(t *testing.T) {
-	got := Multiple3And5(10)
-	expected := 23
-	if got != expected {
-		t.Errorf("expected '%d' but got '%d'", expected, got)
-	}
-}
-
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
@@ -58,8 +50,3 @@ func ExampleEvenOdd_2() {
 	// Output: Even
 }
 
-func ExampleMultiple3And5() {
-	got := Multiple3And5(11)
-	fmt.Println(got)
-	// Output: 33
-}

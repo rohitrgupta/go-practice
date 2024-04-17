@@ -3,11 +3,12 @@ go 1.21.5
 use (
 	./arrays
 	./dictionary
-	./hello
+	./001_hello
 	./injection
-	./integers
+	./002_integers
 	./iteration
 	./mocking
 	./pointers
 	./structs
+	./003_multiple_of_3_and_5
 )

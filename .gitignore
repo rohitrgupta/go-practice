@@ -1,5 +1,5 @@
-hello/hello.go
-integers/integers.go
+001_hello/hello.go
+002_integers/integers.go
 iteration/iterations.go
 arrays/arrays.go
 structs/structs.go
@@ -7,3 +7,4 @@ pointers/pointers.go
 dictionary/dictionary.go
 injection/injection.go
 mocking/mocking.go
+003_multiple_of_3_and_5/module.go
