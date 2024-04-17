@@ -1,7 +1,5 @@
 001_hello/hello.go
 002_integers/integers.go
-structs/structs.go
-pointers/pointers.go
 dictionary/dictionary.go
 injection/injection.go
 mocking/mocking.go
@@ -12,3 +10,5 @@ mocking/mocking.go
 007_digital_root/digital_root.go
 008_array_sum/arrays.go
 009_array_diff/arrays.go
+010_structs/structs.go
+011_pointers/pointers.go

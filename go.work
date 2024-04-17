@@ -1,13 +1,8 @@
 go 1.21.5
 
 use (
-	./dictionary
 	./001_hello
-	./injection
 	./002_integers
-	./mocking
-	./pointers
-	./structs
 	./003_multiple_of_3_and_5
   ./004_repeat
   ./005_vovel_count
@@ -15,4 +10,9 @@ use (
   ./007_digital_root
   ./008_array_sum
   ./009_array_diff
+  ./010_structs
+  ./011_pointers
+  ./012_dictionary
+  ./013_mocking
+  ./014_injection
 )
