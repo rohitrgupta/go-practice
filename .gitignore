@@ -1,1 +1,16 @@
 tview/box/box
+tcell/boxes/boxes
+tcell/demo/demo
+tview/box1/box1
+tview/box2/box2
+tview/button/button
+tview/check/check
+tview/clock/clock
+tview/drop/drop
+tview/form/form
+tview/modal/modal
+tview/table/table
+tview/timer1/timer1
+tview/tree/tree
+twidget/spinner/spinner
+twidget/textsel/textsel
