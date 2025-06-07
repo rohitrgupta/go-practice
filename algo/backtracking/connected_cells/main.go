@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
 
-func main() {
+func main1() {
 
 	result := findLargestRegion([][]int{
 		{1, 1, 0, 0, 0},
@@ -12,6 +17,29 @@ func main() {
 		{1, 0, 1, 1, 1},
 	}, 5, 5) // Should return 7
 	fmt.Println(result) // Output: 6
+}
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Println("Enter the number of rows (M):")
+	scanner.Split(bufio.ScanWords)
+	scanner.Scan()
+	M, _ := strconv.Atoi(scanner.Text())
+	fmt.Println("Enter the number of columns (N):")
+	scanner.Scan()
+	N, _ := strconv.Atoi(scanner.Text())
+	matrix := make([][]int, M)
+	fmt.Println("Enter the matrix (row by row, space-separated):")
+	for i := 0; i < M; i++ {
+		matrix[i] = make([]int, N)
+		for j := 0; j < N; j++ {
+			scanner.Scan()
+			num, _ := strconv.Atoi(scanner.Text())
+			matrix[i][j] = num
+		}
+	}
+	result := findLargestRegion(matrix, M, N)
+	fmt.Println("Largest region size:", result) // Output the size of the largest region
 }
 
 func fingConnectedCells(matrix [][]int, M, N, r, c int) int {
